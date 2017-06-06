@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/namecheap-php-client",
     "description": "A Namecheap Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-namecheap", "namecheap", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "namecheap", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
