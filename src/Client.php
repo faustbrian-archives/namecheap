@@ -51,11 +51,11 @@ class Client
      */
     public function __construct(string $apiUser, string $apiKey, string $userName, string $clientIp, bool $sandbox = true)
     {
-        $this->apiUser  = $apiUser;
-        $this->apiKey   = $apiKey;
+        $this->apiUser = $apiUser;
+        $this->apiKey = $apiKey;
         $this->userName = $userName;
         $this->clientIp = $clientIp;
-        $this->sandbox  = $sandbox;
+        $this->sandbox = $sandbox;
     }
 
     /**
