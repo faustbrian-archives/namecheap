@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Namecheap PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Namecheap\API\Domains;
+namespace Plients\Namecheap\API\Domains;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Namecheap\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Namecheap\AbstractAPI;
 
 class Dns extends AbstractAPI
 {
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setDefault(array $parameters): HttpResponse
     {
@@ -31,7 +31,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setCustom(array $parameters): HttpResponse
     {
@@ -41,7 +41,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getList(array $parameters): HttpResponse
     {
@@ -51,7 +51,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getHosts(array $parameters): HttpResponse
     {
@@ -61,7 +61,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getEmailForwarding(array $parameters): HttpResponse
     {
@@ -71,7 +71,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setEmailForwarding(array $parameters): HttpResponse
     {
@@ -81,7 +81,7 @@ class Dns extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setHosts(array $parameters): HttpResponse
     {

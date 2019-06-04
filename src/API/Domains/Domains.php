@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Namecheap PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Namecheap\API\Domains;
+namespace Plients\Namecheap\API\Domains;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Namecheap\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Namecheap\AbstractAPI;
 
 class Domains extends AbstractAPI
 {
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getList(array $parameters): HttpResponse
     {
@@ -31,7 +31,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getContacts(array $parameters): HttpResponse
     {
@@ -41,7 +41,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(array $parameters): HttpResponse
     {
@@ -51,7 +51,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getTldList(): HttpResponse
     {
@@ -61,7 +61,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setContacts(): HttpResponse
     {
@@ -71,7 +71,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function check(array $parameters): HttpResponse
     {
@@ -81,7 +81,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function reactivate(array $parameters): HttpResponse
     {
@@ -91,7 +91,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function renew(array $parameters): HttpResponse
     {
@@ -101,7 +101,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getRegistrarLock(array $parameters): HttpResponse
     {
@@ -111,7 +111,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function setRegistrarLock(array $parameters): HttpResponse
     {
@@ -121,7 +121,7 @@ class Domains extends AbstractAPI
     /**
      * @param array $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function getInfo(array $parameters): HttpResponse
     {

@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Namecheap PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Namecheap;
+namespace Plients\Namecheap;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -65,7 +65,7 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Namecheap\API\AbstractAPI
+     * @return \Plients\Namecheap\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
@@ -74,7 +74,7 @@ class Client
 
         $client = Http::withBaseUri("$url?ApiUser={$this->apiUser}&ApiKey={$this->apiKey}&UserName={$this->userName}&ClientIp={$this->clientIp}");
 
-        $class = "BrianFaust\\Namecheap\\API\\{$name}";
+        $class = "Plients\\Namecheap\\API\\{$name}";
 
         return new $class($client);
     }
